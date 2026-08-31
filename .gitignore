@@ -1,0 +1,59 @@
+# 운영체제에서 자동 생성되는 파일
+.DS_Store
+Thumbs.db
+
+# Python 바이트코드 및 도구 캐시
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Python 가상환경
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter 임시 파일
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# IDE 및 편집기 설정
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
+
+# 로컬 환경변수 및 비밀 설정
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# 머신러닝 학습 결과 및 실험 로그
+checkpoints/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.keras
+*.onnx
+*.tflite
+
+# 로그, 캐시 및 임시 파일
+*.log
+.cache/
+.tmp/
+tmp/
+temp/
