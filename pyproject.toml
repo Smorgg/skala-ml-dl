@@ -1,0 +1,44 @@
+[project]
+name = "skala-ml-dl"
+version = "0.1.0"
+description = "SKALA 머신러닝 및 딥러닝 Jupyter Notebook 실습"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "datasets",
+    "lazypredict",
+    "lightgbm",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pycaret",
+    # Python 3.11에서 소스 빌드에 실패하는 오래된 5.x 버전을 피합니다.
+    "pyyaml>=6.0.3",
+    "scikit-learn",
+    "seaborn",
+    "torch",
+    "torchvision",
+    "transformers",
+    "xgboost",
+]
+
+# VS Code Jupyter 실행에만 필요한 개발 의존성입니다.
+[dependency-groups]
+dev = [
+    "ipykernel",
+]
+
+# Notebook 중심 저장소이므로 설치 가능한 Python 패키지로 빌드하지 않습니다.
+[tool.uv]
+package = false
+
+# 이 실습 저장소는 현재 macOS에서 사용하므로 불필요한 Windows 의존성은 잠그지 않습니다.
+environments = [
+    "sys_platform == 'darwin'",
+]
+
+# 하위 패키지가 참조하는 폐기된 sklearn 배포판은 제외합니다.
+# 실제 머신러닝 라이브러리는 위의 scikit-learn 의존성을 사용합니다.
+exclude-dependencies = [
+    "sklearn",
+]
