@@ -1,0 +1,19 @@
+# VS Code Jupyter 커널
+ipykernel
+
+# 통계 및 머신러닝
+numpy
+pandas
+seaborn
+matplotlib
+scikit-learn
+xgboost
+lightgbm
+pycaret
+lazypredict
+
+# 딥러닝 및 자연어 처리
+torch
+torchvision
+transformers
+datasets
