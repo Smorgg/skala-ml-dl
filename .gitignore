@@ -50,6 +50,7 @@ tensorboard/
 *.keras
 *.onnx
 *.tflite
+04-DeepLearning/data/MNIST
 
 # 로그, 캐시 및 임시 파일
 *.log
